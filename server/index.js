@@ -20,6 +20,9 @@ var data = red;
 data = data.concat(blue);
 data = data.concat(yellow);
 
+app.get('/api/data.json', (req, res) => {
+	res.json(data);
+});
 
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
